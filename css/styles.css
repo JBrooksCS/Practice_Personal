@@ -1,0 +1,101 @@
+
+/*  Color Pallete
+
+color: #262122;
+color: #337AA6;
+color: #D8D9BF;
+color: #BFBDA3;
+color: #0D0A0A;
+
+*/
+/*    General Styling       */
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    height: 200%;
+    width: 100%;
+}
+body{    
+    background-color: rgb(85, 119, 138);
+}
+
+/*      Navbar styling       */
+.navbar {
+    display: flex; 
+    color: #D8D9BF;
+    background-color: rgb(66, 66, 66);
+}
+.navbar li{
+    text-align: center;
+    align-self: center;
+    list-style-type: none;
+    flex: 1;
+}
+.navbar li:hover{
+    color: rgb(97, 86, 253);
+}
+.logo{
+    max-width: 100%;
+    height: auto;
+    margin: -15% -30%;
+}
+/*           Main Content  */
+.mainContent{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+
+    /*flex-direction: row;*/
+}
+
+/*     content divs        */
+.left-side, .right-side {
+    margin: 0% .2em;
+    color: #D9D7D7;
+    text-align: center;
+    width: 50%;
+    background-color: rgb(6, 59, 119);
+    border-radius: .3em;
+    padding: 1% 0;
+    box-shadow: 5px 10px 8px #888888;
+    border: 1px solid red;
+}
+h3 {
+    padding-bottom: 1%;
+    color: rgb(105, 164, 241);
+}
+
+
+/*             */
+
+/*    Responsive Styling for 600px and less     */
+@media all and (max-width: 600px){
+    .navbar{
+        flex-wrap: wrap;
+    }
+    .navbar li{
+        padding-top:.5em;
+        padding-bottom:.5em;
+        flex-basis: 20%;
+    }
+    .logo{
+        max-width: 100%;
+        height: auto;
+        margin: -20% -30%;
+    }
+    .mainContent{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .right-side, .left-side{
+        width:98%;
+        
+    }
+    .right-side{
+        margin-top: 1%;
+    }
+    
+}
